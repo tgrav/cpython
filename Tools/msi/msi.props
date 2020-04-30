@@ -137,7 +137,7 @@
     </ItemGroup>
 
     <Target Name="_ValidateMsiProps" BeforeTargets="PrepareForBuild">
-        <Error Text="Platform '$(Platform)' is not supported. Use 'x86' or 'x64'." Condition="$(Platform) != 'x86' and $(Platform) != 'x64'" />
+        <Error Text="Platform '$(Platform)' is not supported. Use 'x86' or 'x64'." Condition="$(Platform) != 'x86' and $(Platform) != 'x64' and $(Platform) != 'ARM64'" />
     </Target>
     
     <ItemGroup>
